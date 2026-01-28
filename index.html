@@ -1,2 +1,43 @@
-<h1>Big Shot</h1>
-<p>Now you chance be a BIG SHOT,BIG BIG BIG SHOT </p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* 让整个页面内容居中 */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    height: 100vh; /* 使用整个屏幕的高度 */
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  /* 第二行字体的特殊效果 */
+  .growing-text span {
+    display: inline-block;
+  }
+
+  /* 逐渐变大的控制 */
+  .size-1 { font-size: 16px; }
+  .size-2 { font-size: 24px; }
+  .size-3 { font-size: 36px; }
+  .size-4 { font-size: 50px; }
+  .big-shot { font-size: 70px; font-weight: bold; color: orange; }
+</style>
+</head>
+<body>
+
+  <h1>Big Shot</h1>
+  
+  <p class="growing-text">
+    Now you chance be a 
+    <span class="size-1">BIG </span>
+    <span class="size-2">BIG </span>
+    <span class="size-3">BIG </span>
+    <span class="big-shot">SHOT</span>
+  </p>
+
+</body>
+</html>
